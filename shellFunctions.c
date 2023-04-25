@@ -10,7 +10,7 @@ int shellEscape(info_t *structexit)
 {
 	int check_shellex;
 
-	if (structexit->argv[1])  
+	if (structexit->argv[1])
 	{
 		check_shellex = convString2int(structexit->argv[1]);
 		if (check_shellex == -1)
@@ -90,7 +90,7 @@ int change_currP(info_t *CurrInfo)
 	argument_A = CurrInfo->argv;
 	printString("help call works. Function not yet implemented \n");
 	if (0)
-		printString(*argument_A); 
+		printString(*argument_A);
 	return (0);
 }
 

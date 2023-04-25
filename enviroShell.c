@@ -19,6 +19,13 @@ int initialen(info_t *potenargs)
 	return (1);
 }
 
+/**
+ * callenv - searches for an environment variable and returns its value
+ * @info: pointer to a struct containing environmental variable information
+ * @varEnv: the environment variable to search for
+ *
+ * Return: a pointer to the value of the environmental variable, NULL if not found
+ */
 char *callenv(info_t *info, const char *varEnv)
 {
 	list_t *varNode = info->env;

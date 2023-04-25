@@ -24,7 +24,7 @@ int initialen(info_t *potenargs)
  * @info: pointer to a struct containing environmental variable information
  * @varEnv: the environment variable to search for
  *
- * Return: a pointer to the value of the environmental variable, NULL if not found
+ * Return: a pointer to the value of the environmental variable
  */
 char *callenv(info_t *info, const char *varEnv)
 {
@@ -190,7 +190,7 @@ ssize_t lineneg(info_t *linepara)
  * @buffstruct: pointer to info_t struct
  * @Rbuffer: buffer for reading input
  * @bsize: pointer to size of buffer
- * 
+ *
  * Return: number of bytes read, or -1 on failure
  */
 
@@ -210,7 +210,7 @@ ssize_t bufferR(info_t *buffstruct, char *Rbuffer, size_t *bsize)
  * callstr - reads input from a file descriptor and appends it to a string
  * @struct1: pointer to info_t struct containing file descriptor to read from
  * @pointr: pointer to pointer to string to append input to
- * @allocsize: pointer to size_t to keep track of allocated memory size for string
+ * @allocsize: pointer to size_t to keep track of allocated memory
  *
  * Return: the new size of the string on success, or -1 on failure
  */
@@ -272,7 +272,7 @@ void blocksig(__attribute__((unused))int num_of)
 }
 
 /**
- * enviroInit - initializes a new environment variable or updates an existing one
+ * enviroInit - initializes a new environment variable
  *
  * @envirostruct: pointer to struct containing environment information
  * @varaen: name of environment variable to initialize or update

@@ -138,7 +138,6 @@ int setAtostring(info_t *index, char *stringA)
  *
  * Return: 1 on failure, 0 on success
  */
-
 int stetAlias_toStr(info_t *Astruct, char *aliasstring)
 {
 	char *SetS;

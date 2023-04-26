@@ -51,7 +51,7 @@ int enviroInit(info_t *envirostruct, char *varaen, char *envirovalue)
  * Return: 1 if the node was deleted, 0 otherwise
  */
 
-int _unsetenv(info_t *abcstruct, char *words)
+int delenviro(info_t *abcstruct, char *words)
 {
 	list_t *environode = abcstruct->env;
 	size_t ves = 0;
